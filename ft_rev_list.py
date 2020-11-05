@@ -1,2 +1,4 @@
 def ft_rev_list(mass):
-    return mass[::-1]
+    for i in range(len(mass)):
+        mass[i] = len(mass) - i
+    return mass
