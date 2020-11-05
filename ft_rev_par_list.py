@@ -1,8 +1,7 @@
 def ft_rev_list(mass):
-    new_mass = []
-    for i in range(-1, -len(mass) - 1, -1):
-        new_mass.append(mass[i])
-    return new_mass
+    for i in range(len(mass)):
+        mass[i] = len(mass) - i
+    return mass
 
 
 def ft_rev_par_list(mass):
